@@ -1,2 +1,2 @@
 # waly-rs
-Straight-forward WAL Implementation for Misbar - WIP
+Straight-forward WAL Implementation for Rust

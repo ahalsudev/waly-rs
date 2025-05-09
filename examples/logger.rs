@@ -1,9 +1,9 @@
 use waly_rs::WriteAheadLog;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let mut wal = WriteAheadLog::new("/opt/misbar/logs.wal", 1024 * 1024)?;
+    let mut wal = WriteAheadLog::new("logs.wal", 1024 * 1024)?;
 
-    let log_data = "Test misbar logs".as_bytes().to_vec();
+    let log_data = "Test persistent log".as_bytes().to_vec();
     let _entry = wal.append(log_data)?;
 
     // Read all entries
