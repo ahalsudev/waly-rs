@@ -1,4 +1,4 @@
-# waly_rs
+# waly
 
 A Stright-forward Write-Ahead Log (WAL) implementation in Rust.
 
@@ -15,13 +15,13 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-waly_rs = "0.1.4"
+waly = "0.1.4"
 ```
 
 ## Quick Start
 
 ```rust
-use waly_rs::{WriteAheadLog, Result};
+use waly::{WriteAheadLog, Result};
 
 fn main() -> Result<()> {
     // Create a new WAL
@@ -126,7 +126,7 @@ The library uses a custom error type `WalError` that can represent:
 ### Basic Usage
 
 ```rust
-use waly_rs::{WriteAheadLog, Result};
+use waly::{WriteAheadLog, Result};
 
 fn main() -> Result<()> {
     let mut wal = WriteAheadLog::new("logs.wal")?;

@@ -44,7 +44,7 @@ pub struct LogEntry {
 /// # Examples
 ///
 /// ```rust
-/// use waly_rs::{WriteAheadLog, Result};
+/// use waly::{WriteAheadLog, Result};
 ///
 /// fn main() -> Result<()> {
 ///     let mut wal = WriteAheadLog::new("logs.wal")?;
@@ -84,7 +84,7 @@ impl WriteAheadLog {
     /// # Examples
     ///
     /// ```rust
-    /// use waly_rs::WriteAheadLog;
+    /// use waly::WriteAheadLog;
     ///
     /// let wal = WriteAheadLog::new("logs.wal")?;
     /// ```
@@ -153,7 +153,7 @@ impl WriteAheadLog {
     /// # Examples
     ///
     /// ```rust
-    /// use waly_rs::WriteAheadLog;
+    /// use waly::WriteAheadLog;
     ///
     /// let mut wal = WriteAheadLog::new("logs.wal")?;
     /// let entry = wal.append(b"important data".to_vec())?;
@@ -191,7 +191,7 @@ impl WriteAheadLog {
     /// # Examples
     ///
     /// ```rust
-    /// use waly_rs::WriteAheadLog;
+    /// use waly::WriteAheadLog;
     ///
     /// let wal = WriteAheadLog::new("logs.wal")?;
     /// let entries = wal.read_all()?;
@@ -229,7 +229,7 @@ impl WriteAheadLog {
     /// # Examples
     ///
     /// ```rust
-    /// use waly_rs::WriteAheadLog;
+    /// use waly::WriteAheadLog;
     ///
     /// let wal = WriteAheadLog::new("logs.wal")?;
     /// wal.clear()?;
@@ -259,7 +259,7 @@ impl WriteAheadLog {
     /// # Examples
     ///
     /// ```rust
-    /// use waly_rs::WriteAheadLog;
+    /// use waly::WriteAheadLog;
     ///
     /// let wal = WriteAheadLog::new("logs.wal")?;
     /// wal.clear_id(123)?;

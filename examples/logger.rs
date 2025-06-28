@@ -1,7 +1,7 @@
 /// This example demonstrates how to use the WriteAheadLog and its methods
 /// The assumed scenario is that your software is persisting logs to disk to help recover
 /// from a crash or network failures.
-use waly_rs::WriteAheadLog;
+use waly::WriteAheadLog;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // 1. Create a new WriteAheadLog instance
