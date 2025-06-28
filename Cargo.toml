@@ -1,0 +1,20 @@
+[package]
+name = "waly_rs"
+version = "0.1.4"
+edition = "2021"
+description = "A Write-Ahead Logging (WAL) library for Rust"
+license = "MIT"
+repository = "https://github.com/ahalsudev/waly-rs"
+documentation = "https://docs.rs/waly_rs"
+readme = "README.md"
+keywords = ["logging", "wal", "write-ahead-log", "durability"]
+categories = ["filesystem"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+
+[lib]
+name = "waly_rs"
+path = "src/lib.rs"
